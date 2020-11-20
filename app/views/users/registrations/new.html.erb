@@ -11,6 +11,10 @@
     <%= f.number_field :age %>
   </div>
   <div class="field">
+    <%= form.label :avatar %>
+    <%= form.file_field :image %><br>
+  </div>
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
