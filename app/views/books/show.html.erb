@@ -32,7 +32,7 @@
   <ul>
     <% @book.book_review.each do |book_review|%>
       <li><%= book_review.review %>
-      (<%= book_review.user_id %>)</li>
+      (<%= book_review.user.name %>)</li>
     <% end %>
   </ul>
 <%= link_to 'Edit', edit_book_path(@book) %> |
